@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JS para diseñadores.Uso básico de JavaScript</title>
+
+	<!-- Bootstrap 3 -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bottstrap.sin.css">
+
+	<style type="text/css" media="screen">
+		.destacado {
+			color:#fc0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">	1
+				<h1 id="nombre">Nombre del detalle</h1>
+				<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+				<blockquote>
+					<p id="descripción">Esto es una descripción.</p>
+					<footer>
+						<script>
+						var fecha = nwe Date();
+						var dia = fecha.getDate();
+						var	mes = fecha.getMonth()+1;
+						var anio = fecha.getFullYear();
+						document.write(dia+"/"+mes+"/"+anio);
+						</script>
+						</footer>
+					</blockquote>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var elemento;
+		var descripción;
+
+		descripción = document.getElementById("Descipción").innerHTML;
+		console.log(descripción);
+		descripción += "Modificada.";
+		document.getElementById("descripción").innerHTML = descripción;
+
+		elemento = document.querySelector("h1");
+		elemento.className += "destacado";
+
+		$("#descripción")
+		document.getElementById("descripción")
+
+		$("h1")
+		document.getElementById("h1")
+
+		$("p.nombre-clase")
+		document.querySelectorAll("p.nombre-clase")
+
+		/*
+		document.getElementsByClassName("nombre-clase");
+		document.get
+		element.querySelector("p.nombre-clase");	//devuelve el primer,IE8+
+		element.querySelectorAll("p.nombre-clase"); //devuelve todos,IE8+
+
+	</script>
+</body>
+</html>
